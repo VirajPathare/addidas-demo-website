@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StrideX Shoes</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#111;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+color:#ff6b00;
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff6b00;
+}
+
+section{
+padding:100px 8%;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero h1{
+font-size:65px;
+}
+
+.hero p{
+margin:20px 0;
+font-size:22px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#ff6b00;
+color:white;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#e45c00;
+}
+
+.title{
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+text-align:center;
+}
+
+.price{
+font-size:22px;
+color:#ff6b00;
+font-weight:bold;
+margin:10px 0;
+}
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.about p{
+line-height:1.8;
+font-size:18px;
+}
+
+.contact{
+max-width:700px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:15px 0;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+padding:15px 30px;
+background:#ff6b00;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:18px;
+}
+
+footer{
+background:#111;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:60px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin:8px;
+display:inline-block;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">StrideX</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Run Beyond Limits</h1>
+
+<p>Premium Shoes Designed For Style, Comfort & Performance</p>
+
+<a href="#products" class="btn">Shop Collection</a>
+
+</div>
+
+</section>
+
+<section id="products">
+
+<h2 class="title">Featured Shoes</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80">
+<div class="card-content">
+<h3>Air Runner</h3>
+<p>Lightweight running shoes.</p>
+<div class="price">$99</div>
+<a href="#" class="btn">Buy Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=600&q=80">
+<div class="card-content">
+<h3>Urban Sneaker</h3>
+<p>Perfect everyday style.</p>
+<div class="price">$129</div>
+<a href="#" class="btn">Buy Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=600&q=80">
+<div class="card-content">
+<h3>Sport Pro</h3>
+<p>Built for athletes.</p>
+<div class="price">$149</div>
+<a href="#" class="btn">Buy Now</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About StrideX</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=900&q=80">
+
+<div>
+
+<p>
+
+StrideX is a modern footwear brand dedicated to creating shoes that combine innovation, premium materials, and timeless style. Whether you're training for your next marathon or walking through the city, our footwear is designed to keep you comfortable every step of the way.
+
+<br><br>
+
+✔ Premium Materials<br>
+✔ Lightweight Design<br>
+✔ Modern Fashion<br>
+✔ Built For Performance
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact">
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>StrideX Shoes</h2>
+
+<p>Designed for Champions • © 2026</p>
+
+</footer>
+
+</body>
+</html>
